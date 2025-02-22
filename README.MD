@@ -36,6 +36,8 @@ $$ H(X) = - \sum p(x) \log_2 p(x) $$
 ### `calc_wighted_average(enp1, enp1_multiplier, enp2, enp2_multiplier)`
 This function computes the weighted average entropy when splitting the dataset.
 
+$$ H_{\text{weighted}} = \frac{(H_1 \times N_1) + (H_2 \times N_2)}{N_1 + N_2} $$
+
 ### Example Dataset
 The dataset used is a NumPy array with four attributes:
 - Column 0: Binary feature (e.g., Yes/No)
